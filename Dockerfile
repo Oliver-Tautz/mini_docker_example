@@ -1,6 +1,6 @@
 from golang:1.24rc1-bookworm AS build
 
-COPY backend/ .
+COPY backend/ backend
 
 WORKDIR backend
 
