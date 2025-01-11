@@ -9,7 +9,7 @@ on:
 jobs:
 
 
-  build:
+  build docker and push:
     runs-on: ubuntu-latest
     env:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
