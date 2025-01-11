@@ -1,10 +1,9 @@
 from golang:1.24rc1-bookworm AS build
 
-ADD backend .
+COPY backend/ .
 
 WORKDIR backend
 
-RUN ls
 RUN  go build server.go models.go
 
 
