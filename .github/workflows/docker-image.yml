@@ -20,8 +20,7 @@ jobs:
       run: docker build . --file Dockerfile --tag mini-docker-example:latest
       
   # Log in to GitHub Container Registry
-    - name: Log in to GitHub Container Registry
-      run: 
+
 
     # Tag the Docker image
     - name: Tag the Docker image
