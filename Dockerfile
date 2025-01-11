@@ -5,7 +5,7 @@ ADD backend .
 WORKDIR backend
 
 EXPOSE 8080
-RUN  build server.go models.go
+RUN  go build server.go models.go
 
 
 from alpine 
