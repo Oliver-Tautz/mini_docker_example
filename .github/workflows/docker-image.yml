@@ -31,5 +31,5 @@ jobs:
     - name: Push the Docker image
       #run: docker push ghcr.io/${{ github.repository_owner }}/mini-docker-example:latest
       run: |
-       echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+       echo GH_TOKEN| docker login ghcr.io -u ${{ github.actor }} --password-stdin
        docker push ghcr.io/oliver-tautz/mini-docker-example:latest
