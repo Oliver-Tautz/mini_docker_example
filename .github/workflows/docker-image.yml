@@ -23,7 +23,7 @@ jobs:
 
     # Tag the Docker image
     - name: Tag the Docker image
-      run: docker tag mini-docker-example:latest ghcr.io/${{ github.repository_owner }}/mini-docker-example:latest
+      run: docker tag mini-docker-example:latest ghcr.io/oliver-tautz/mini-docker-example:latest
 
     # Push the Docker image to GitHub Container Registry
     - name: Push the Docker image
