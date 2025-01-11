@@ -8,7 +8,7 @@ RUN  go build server.go models.go
 
 
 from alpine 
-COPY --from=build backend/server .
+COPY --from=build backend/server server
 EXPOSE 8080
 
 ENTRYPOINT [ "./server" ]
