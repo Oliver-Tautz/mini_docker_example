@@ -22,7 +22,7 @@ jobs:
     - name: PRINT DOCKER SECRETS
       run: |
         echo ${{ vars.DOCKERHUB_USERNAME }}
-        echo ${{ secrets.DOCKERHUB_TOKEN }}
+        echo ${{ secrets.DOKERHUB_TOKEN }}
       
     # Log in to DockerHub
     - name: Login to Docker Hub
